@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Reminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">MedReminder</a>
+            <ul class="navbar-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#reminders">Reminders</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="navbar-toggle" id="navbar-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section class="main-section">
+        <div class="container">
+            <h1>Manage Your Medicine Reminders</h1>
+
+            <!-- Reminder Input Form -->
+            <div class="reminder-card">
+                <h2>Set Reminder</h2>
+                <div class="reminder-inputs">
+                    <div class="input-field">
+                        <label for="medicine-name">Medicine Name</label>
+                        <input type="text" id="medicine-name" placeholder="Enter Medicine Name">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="medicine-dosage">Dosage</label>
+                        <input type="text" id="medicine-dosage" placeholder="Enter Dosage (e.g., 2 pills)">
+                    </div>
+
+                    <div class="input-field">
+                        <label for="reminder-time">Time</label>
+                        <input type="time" id="reminder-time">
+                    </div>
+
+                    <button id="add-reminder-btn" class="btn btn-primary">Add Reminder</button>
+                </div>
+            </div>
+
+            <!-- Reminders List -->
+            <h2>Your Reminders</h2>
+            <ul id="reminder-list"></ul>
+
+            <div class="controls">
+                <button id="clear-reminders-btn" class="btn btn-secondary">Clear All</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="info-section">
+        <h2>About</h2>
+        <p>This app helps you manage your medicine schedule and reminds you when to take your medications on time.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="info-section">
+        <h2>Contact</h2>
+        <p>For support, contact us at <strong>support@medreminder.com</strong>.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
